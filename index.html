@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #020617;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Anirudh</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Hi, I'm <span>Anirudh</span></h2>
+        <p>Fresher DevOps Engineer | Docker | AWS | CI/CD</p>
+        <button class="btn">View My Work</button>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="card">Linux</div>
+            <div class="card">Docker</div>
+            <div class="card">Git & GitHub</div>
+            <div class="card">AWS</div>
+            <div class="card">CI/CD</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>CI/CD Pipeline</h3>
+                <p>Automated build and deploy using GitHub Actions</p>
+            </div>
+            <div class="card">
+                <h3>Docker App</h3>
+                <p>Containerized Node.js application</p>
+            </div>
+            <div class="card">
+                <h3>AWS Deployment</h3>
+                <p>Deployed app on EC2 with Nginx</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your@email.com</p>
+        <p>Phone: 1234567890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Anirudh | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
